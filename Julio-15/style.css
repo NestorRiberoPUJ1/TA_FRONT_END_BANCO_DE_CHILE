@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    padding: 12px;
+    height: 56px;
+    box-sizing: border-box;
+    background-color: rgb(24, 100, 86);
+}
+
+header>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#main-title {
+    color: white;
+    font-size: 24px;
+}
+
+.icon-btn {
+    height: 24px;
+    background-color: transparent;
+    border: none;
+
+}
+
+header>button.icon-btn {
+    float: right;
+    margin: 0px 2px
+}
+
+
+/* NAV */
+
+nav {
+    padding: 12px 0px;
+    box-sizing: border-box;
+    background-color: rgb(24, 100, 86);
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 1);
+}
+
+.nav-link {
+    color: rgba(78, 188, 171, 0.644);
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    height: 42px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-link>span {
+    font-size: 14px;
+}
+
+nav>button.icon-btn {
+    margin: 0px 8px
+}
+
+.nav-link[active="true"]{
+    color: white;
+    border-bottom: 3px solid white;
+}
