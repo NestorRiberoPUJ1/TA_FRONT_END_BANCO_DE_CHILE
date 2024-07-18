@@ -12,6 +12,9 @@ header {
     height: 56px;
     box-sizing: border-box;
     background-color: rgb(24, 100, 86);
+    position: sticky;
+    top: 0px;
+    z-index: 999;
 }
 
 header>* {
@@ -36,6 +39,17 @@ header>button.icon-btn {
     margin: 0px 2px
 }
 
+/* break-shadow */
+
+.break-shadow {
+    min-width: 100%;
+    min-height: 12px;
+    background: rgba(0, 0, 0, 0.38);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.38) 0%, rgba(0, 0, 0, 0) 80%);
+    position: sticky;
+    box-sizing: border-box;
+    top: 55px;
+}
 
 /* NAV */
 
@@ -71,7 +85,97 @@ nav>button.icon-btn {
     margin: 0px 8px
 }
 
-.nav-link[active="true"]{
+.nav-link[active="true"] {
     color: white;
     border-bottom: 3px solid white;
+}
+
+/* CHAT STYLES */
+
+.chat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 56px;
+    padding: 5px 12px;
+    column-gap: 8px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.121);
+    position: relative;
+}
+
+.chat>img {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.chat-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.chat-content>h3 {
+    font-size: 16px;
+}
+
+.chat-content>p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.chat-notifications {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 4px;
+}
+
+.chat-notifications>p {
+    font-size: 12px;
+    color: rgb(0, 185, 0)
+}
+
+.chat-notifications>span {
+    background-color: rgb(0, 185, 0);
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* NEW CHAT */
+
+#new-chat {
+    height: 52px;
+    width: 52px;
+    background-color: rgb(0, 185, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+/* STATUS */
+
+.status{
+    height: 12px;
+    width: 12px;
+    background-color: rgb(0, 185, 0);
+    border-radius: 50%;
+    position: absolute;
+    left:44px;
+    top:2px
 }
