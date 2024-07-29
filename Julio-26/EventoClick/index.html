@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <h1>Petlopedia</h1>
+        <input type="text" placeholder="Buscar Mascota">
+        <button onclick="login(this)" class="bg-light">Iniciar Sesión</button>
+    </nav>
+    <main>
+        <section>
+            <div class="card">
+                <h3>Chinchilla</h3>
+                <p><em>Sustantivo</em></p>
+                <p>Plural: Chinchillas</p>
+                <p>Oficialmente el animal con pelaje más denso del mundo</p>
+                <button onclick="darLike(this)" ><span>22</span> Me gusta</button>
+            </div>
+            <div class="card">
+                <h3>Alpaca</h3>
+                <p><em>Sustantivo</em></p>
+                <p>Plural: Alpacas</p>
+                <p>Camelidos lanudos domésticos</p>
+                <button onclick="darLike(this)"><span>14</span> Me gusta</button>
+            </div>
+        </section>
+        <aside>
+            <div class="card">
+
+                <p>Petlopedia está definida por Ti</p>
+                <button id="agregarBtn" >Agregar definición</button>
+            </div>
+            
+        </aside>
+    </main>
+    
+    
+</body>
+
+</html>

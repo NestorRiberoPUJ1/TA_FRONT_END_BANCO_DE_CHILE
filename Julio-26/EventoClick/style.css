@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: dodgerblue;
+    height: 48px;
+}
+
+.bg-dark {
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+
+.bg-light {
+    background-color: white;
+    color: rgb(68, 68, 68);
+}
+
+/* LAYOUT */
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 300px;
+    gap: 16px;
+    padding: 16px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    flex: 1;
+    gap: 16px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    gap: 16px;
+}
+
+/* CARDS */
+
+.card {
+    border: 2px solid black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background-color: white;
+}
