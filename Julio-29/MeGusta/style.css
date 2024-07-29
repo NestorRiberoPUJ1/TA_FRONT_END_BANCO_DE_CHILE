@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 780px;
+    margin: 0 auto;
+}
+
+/* NAV */
+nav {
+    height: 48px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* LAYOUT */
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    gap: 16px;
+    padding: 16px;
+}
+
+main>aside {
+    width: 200px;
+
+}
+main>section{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.profile{
+    background-color: rgb(235, 235, 235);
+    padding: 16px;
+    border-radius: 8px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile>img{
+    height: 124px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+
+
+/* POST */
+.post{
+    background-color: rgb(235, 235, 235);
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.post>div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post>div>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.post>div>div>button{
+    background-color: gold;
+    border: none;
+    height: 24px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post>div>div>button:hover{
+    background-color: goldenrod;
+}
