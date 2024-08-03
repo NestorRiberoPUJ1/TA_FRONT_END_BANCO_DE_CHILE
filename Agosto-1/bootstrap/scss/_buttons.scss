@@ -1,6 +1,7 @@
 //
 // Base styles
 //
+@use "sass:map";
 
 .btn {
   // scss-docs-start btn-css-vars
@@ -11,7 +12,7 @@
   --#{$prefix}btn-font-weight: #{$btn-font-weight};
   --#{$prefix}btn-line-height: #{$btn-line-height};
   --#{$prefix}btn-color: #{$btn-color};
-  --#{$prefix}btn-bg: transparent;
+  --#{$prefix}btn-bg: #{$btn-bg};
   --#{$prefix}btn-border-width: #{$btn-border-width};
   --#{$prefix}btn-border-color: transparent;
   --#{$prefix}btn-border-radius: #{$btn-border-radius};
@@ -149,7 +150,7 @@
         $active-border: tint-color($value, $btn-active-border-tint-amount)
       );
     } @else {
-      @include button-variant($value, $value);
+      @include button-variant($value, $value,map.get($constrast-theme-colors, $color));
     }
   }
 }

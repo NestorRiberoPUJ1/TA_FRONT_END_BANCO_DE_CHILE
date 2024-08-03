@@ -1,17 +1,19 @@
 
-
-
-
 $primary: #3f51b5;
+$color-contrast-primary: #fff;
 
-
-$secondary:#f50057;
+$secondary: #f50057;
+$color-contrast-secondary: #fff;
 
 
 $danger: #f44336;
-$warning:#ff9800;
+$warning: #ff9800;
+$color-contrast-warning: black;
 
-$btn-font-size: 20px;
+$btn-font-size: 0.8em;
+$btn-box-shadow: 5px 5px 5px 0px rgb(0, 0, 0);
+$enable-shadows: true;
+$btn-border-radius: 10px;
 
 
 @import "../bootstrap/scss/bootstrap";

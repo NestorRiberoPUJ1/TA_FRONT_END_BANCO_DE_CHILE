@@ -74,6 +74,12 @@ $min-contrast-ratio:   4.5 !default;
 // Customize the light and dark text colors for use in our color contrast function.
 $color-contrast-dark:      $black !default;
 $color-contrast-light:     $white !default;
+$color-contrast-primary:   $white !default;
+$color-contrast-secondary: $gray-900 !default;
+$color-contrast-info:      $white !default;
+$color-contrast-success:   $white !default;
+$color-contrast-warning:   $black !default;
+$color-contrast-danger:    $white !default;
 
 // fusv-disable
 $blue-100: tint-color($blue, 80%) !default;
@@ -319,6 +325,20 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark
 ) !default;
+
+// scss-docs-start theme-colors-map
+$constrast-theme-colors: (
+  "primary":    $color-contrast-primary,
+  "secondary":  $color-contrast-secondary,
+  "success":    $color-contrast-success,
+  "info":       $color-contrast-info,
+  "warning":    $color-contrast-warning,
+  "danger":     $color-contrast-danger,
+  "light":      $color-contrast-light,
+  "dark":       $color-contrast-dark
+) !default;
+
+
 // scss-docs-end theme-colors-map
 
 // scss-docs-start theme-text-variables
@@ -816,6 +836,7 @@ $input-btn-border-width:      var(--#{$prefix}border-width) !default;
 
 // scss-docs-start btn-variables
 $btn-color:                   var(--#{$prefix}body-color) !default;
+$btn-bg:                      transparent !default;
 $btn-padding-y:               $input-btn-padding-y !default;
 $btn-padding-x:               $input-btn-padding-x !default;
 $btn-font-family:             $input-btn-font-family !default;
